@@ -3,6 +3,20 @@
   publish = "build"
   command = "npm run build"
 
+
+[dev]
+    dir = "frontend/"
+    command = "live-server --port=3000 --no-browser"
+    targetPort = 3000
+    framework = "#custom"
+    publish = "build"
+
+[dev]
+    dir = "api"
+    command = "live-server --port=4000 --no-browser"
+    targetPort = 4000
+    framework = "#custom"
+
 [[redirects]]
   from    = "/*"
   to      = "/index.html"
